@@ -819,4 +819,7 @@ int main(void)
 	printf("\n\n");
 
 	ft_printf("I am ft_printf : int=%d char=%c str=%s\n\n",3,'a',"abc");
+
+	printf("input a line:\n");
+	printf("your input: %s\n",ft_get_next_line(1));
 }
