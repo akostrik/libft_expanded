@@ -1,5 +1,5 @@
 # libft_expanded
-The project libft of 42 School + ft_printf + get_next_line
+The project libft of 42 School + ft_printf + ft_get_next_line
 
 How to run:
 1) install bsd library
