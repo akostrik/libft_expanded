@@ -1,4 +1,4 @@
-# libft
+# libft_expanded
 The project libft of 42 School + ft_printf + get_next_line
 
 How to run:
