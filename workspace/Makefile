@@ -6,7 +6,7 @@
 #    By: akostrik <akostrik@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/17 14:32:35 by akostrik          #+#    #+#              #
-#    Updated: 2023/02/16 16:35:30 by akostrik         ###   ########.fr        #
+#    Updated: 2023/02/17 12:52:42 by akostrik         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRCS   = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
           ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
           ft_printf.c ft_putnbr_base_10_fd.c ft_put_pointer_fd.c \
           ft_put_unsign_long_fd.c ft_get_next_line.c \
-          ft_get_next_line_utils.c
+          ft_get_next_line_utils.c ft_iswhitespace.c
 OBJS    = ${SRCS:.c=.o}
 HDRS    = .
 CFLAGS  = -Wall -Wextra -Werror
