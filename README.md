@@ -1,10 +1,6 @@
 # libft_expanded
-The project libft of 42 School + ft_printf + ft_get_next_line
+The project libft of 42 School + ft_printf + ft_get_next_line + some more functions
 
 How to run:
 1) install bsd library
 2) make 
-
-if you do not have bsd library:
-1) comment in main.c strlcpy, strlcat and strnstr and the line #include <bsd/string.h>
-2) make
