@@ -6,12 +6,12 @@
 /*   By: akostrik <akostrik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 12:24:00 by akostrik          #+#    #+#             */
-/*   Updated: 2023/02/16 16:32:48 by akostrik         ###   ########.fr       */
+/*   Updated: 2023/02/22 10:58:01 by akostrik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef FT_GET_NEXT_LINE_H
+# define FT_GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 512

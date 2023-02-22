@@ -6,7 +6,7 @@
 /*   By: akostrik <akostrik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 14:47:09 by akostrik          #+#    #+#             */
-/*   Updated: 2022/11/27 20:59:18 by akostrik         ###   ########.fr       */
+/*   Updated: 2023/02/22 10:51:47 by akostrik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ static void print_list(t_text_portion **list)
 	}
 }
 */
+
+	//free(list); ?
 
 #include "libft.h"
 
@@ -177,6 +179,5 @@ char	**ft_split(char const *s, char c)
 	if (tab == NULL)
 		return (NULL);
 	destroy_list(&list);
-	//free(list);
 	return (tab);
 }

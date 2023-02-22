@@ -6,7 +6,7 @@
 /*   By: akostrik <akostrik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 15:59:03 by akostrik          #+#    #+#             */
-/*   Updated: 2023/02/17 12:51:05 by akostrik         ###   ########.fr       */
+/*   Updated: 2023/02/22 10:57:31 by akostrik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,7 @@
 # include <fcntl.h>
 # include <sys/stat.h>
 # include <sys/types.h>
-
-#include "ft_get_next_line.h"
+# include "ft_get_next_line.h"
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
@@ -61,16 +60,17 @@ char		**ft_split(char const *s, char c);
 char		*ft_itoa(int n);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
-ssize_t	ft_putchar_fd(char c, int fd);
-ssize_t	ft_putstr_fd(char *s, int fd);
+ssize_t		ft_putchar_fd(char c, int fd);
+ssize_t		ft_putstr_fd(char *s, int fd);
 void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 
 int			ft_printf(const char *str, ...);
-ssize_t	ft_putnbr_base_10_fd(int n, int fd);
-ssize_t	ft_put_pointer_fd(void *p, int fd);
-ssize_t	ft_put_unsign_long_fd(unsigned long n, size_t base, char uppercase, int fd);
+ssize_t		ft_putnbr_base_10_fd(int n, int fd);
+ssize_t		ft_put_pointer_fd(void *p, int fd);
+ssize_t		ft_put_uns_long_fd(unsigned long n, size_t base, char uppcase, \
+int fd);
 
-char	*ft_get_next_line(int fd);
+char		*ft_get_next_line(int fd);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: akostrik <akostrik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 13:46:18 by akostrik          #+#    #+#             */
-/*   Updated: 2023/02/16 16:49:24 by akostrik         ###   ########.fr       */
+/*   Updated: 2023/02/22 10:54:15 by akostrik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,20 +47,20 @@ static int	is_conversion(const char *s)
 	return (0);
 }
 
-static ssize_t	put_conversion(const char *s, va_list	list_args, int fd)
+static ssize_t	put_conversion(const char *s, va_list	ls_arg, int fd)
 {
 	if (!ft_strncmp(s, "%s", 2))
-		return (ft_putstr_fd(va_arg(list_args, char *), fd));
+		return (ft_putstr_fd(va_arg(ls_arg, char *), fd));
 	if (!ft_strncmp(s, "%c", 2))
-		return (ft_putchar_fd(va_arg(list_args, int), fd));
+		return (ft_putchar_fd(va_arg(ls_arg, int), fd));
 	if (!ft_strncmp(s, "%p", 2))
-		return (ft_put_pointer_fd(va_arg(list_args, void *), fd));
+		return (ft_put_pointer_fd(va_arg(ls_arg, void *), fd));
 	if (!ft_strncmp(s, "%d", 2) || !ft_strncmp(s, "%i", 2))
-		return (ft_putnbr_base_10_fd(va_arg(list_args, int), fd));
+		return (ft_putnbr_base_10_fd(va_arg(ls_arg, int), fd));
 	if (!ft_strncmp(s, "%u", 2))
-		return (ft_put_unsign_long_fd(va_arg(list_args, unsigned int), 10, 1, fd));
+		return (ft_put_uns_long_fd(va_arg(ls_arg, unsigned int), 10, 1, fd));
 	if (!ft_strncmp(s, "%x", 2) || !ft_strncmp(s, "%X", 2))
-		return (ft_put_unsign_long_fd(va_arg(list_args, unsigned int), 16, s[1], fd));
+		return (ft_put_uns_long_fd(va_arg(ls_arg, unsigned int), 16, s[1], fd));
 	if (!ft_strncmp(s, "%%", 2))
 		return (ft_putchar_fd('%', fd));
 	return (-1);
