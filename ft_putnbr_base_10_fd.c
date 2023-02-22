@@ -6,7 +6,7 @@
 /*   By: akostrik <akostrik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 15:57:46 by akostrik          #+#    #+#             */
-/*   Updated: 2023/02/22 10:46:02 by akostrik         ###   ########.fr       */
+/*   Updated: 2023/02/22 11:02:54 by akostrik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ ssize_t	ft_putnbr_base_10_fd(int n, int fd)
 		n = -n;
 		ret ++;
 	}
-	ret += ft_put_unsign_long_fd((unsigned int)n, 10, 'x', fd);
+	ret += ft_put_uns_long_fd((unsigned int)n, 10, 'x', fd);
 	return (ret);
 }
