@@ -22,7 +22,7 @@ ssize_t	ft_put_pointer_fd(void *p, int fd)
 	ret1 = ft_putstr_fd("0x", fd);
 	if (ret1 == -1)
 		return (-1);
-	ret2 = ft_put_unsign_long_fd((unsigned long)(p), 16, 'x', fd);
+	ret2 = ft_put_uns_long_fd((unsigned long)(p), 16, 'x', fd);
 	if (ret2 == -1)
 		return (-1);
 	return (ret1 + ret2);
